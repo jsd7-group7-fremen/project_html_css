@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.11.1/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <section class="md:py-8 md:px-12 p-4 md:flex md:gap-6">
+      <div class="md:w-7/12">
+        <div class="flex items-center justify-between pr-2">
+          <div class="flex items-center">
+            <div class="overflow-hidden">
+              <img
+                src="./image/shoes logo_Fremen_v2.jpg"
+                class="w-24 object-contain"
+              />
+            </div>
+            <span class="font-bold uppercase border-l-2 pl-2"> checkout</span>
+          </div>
+          <div class="flex items-center gap-4">
+            <span class="hidden md:block">Have An Account?</span>
+            <button class="btn btn-outline rounded-none px-12">LOGIN</button>
+          </div>
+        </div>
+        <h1 class="px-4 py-2 bg-slate-200 md:py-4">SHIPPING</h1>
+        <div class="flex flex-col p-4 gap-4">
+          <div class="flex gap-2">
+            <h2 class="text-sm font-semibold">SHIPPING ADDRESS</h2>
+            <img src="./image/question.png" class="object-contain w-4" />
+          </div>
+          <div class="flex flex-col md:flex-row gap-4">
+            <input
+              type="text"
+              placeholder="First Name"
+              class="input input-md input-bordered rounded-none w-full"
+            />
+            <input
+              type="text"
+              placeholder="Last Name"
+              class="input input-md input-bordered rounded-none w-full"
+            />
+          </div>
+          <input
+            type="text"
+            placeholder="Addess"
+            class="input input-md input-bordered rounded-none w-full"
+          />
+          <input
+            type="text"
+            placeholder="Apartment, etc"
+            class="input input-md input-bordered rounded-none w-full"
+          />
+          <div class="flex flex-col md:flex-row gap-4">
+            <input
+              type="text"
+              placeholder="City"
+              class="input input-md input-bordered rounded-none w-full md:w-6/12"
+            />
+            <select
+              class="select select-bordered select-md rounded-none md:w-6/12"
+            >
+              <option disabled selected>Country</option>
+              <option>Thailand</option>
+              <option>Singapore</option>
+            </select>
+          </div>
+          <input
+            type="text"
+            placeholder="Postal/Zip code"
+            class="input input-md input-bordered rounded-none w-full md:w-6/12"
+          />
+        </div>
+      </div>
+      <div class="md:w-5/12">
+        <h1 class="px-4 py-2 font-semibold text-lg">ORDER SUMMARY</h1>
+        <div class="p-4">
+          <div class="border-b-2 border-gray-500 pb-2">
+            <div class="flex justify-between">
+              <p>Subtotal</p>
+              <p>฿ 3999 Bath</p>
+            </div>
+            <div class="flex justify-between">
+              <p>Taxes</p>
+              <p>฿ 1 Bath</p>
+            </div>
+            <!-- <div class="flex justify-between ">
+                        <p>Other</p>
+                        <p>xxxxx</p>
+                    </div> -->
+          </div>
+          <div class="flex justify-between pt-2">
+            <p>TOTAL</p>
+            <p>฿ 4000 Bath</p>
+          </div>
+        </div>
+        <div class="px-4 py-2">
+          <p class="text-lg">Apply a Promo Code or Discount (one per order)</p>
+          <div class="join w-full py-4">
+            <input
+              class="input input-bordered join-item rounded-none w-full"
+              placeholder="Promo Code"
+            />
+            <button class="btn bg-slate-200 join-item rounded-none w-3/12">
+              APPLY
+            </button>
+          </div>
+        </div>
+        <div class="px-4 py-2 flex gap-2">
+          <div class="border-2">
+            <img
+              src="https://d2cva83hdk3bwc.cloudfront.net/autry-medalist-low-leather-sneakers-green-white-1.jpg"
+              alt="shoe"
+              class="w-28"
+            />
+          </div>
+          <div class="flex flex-col justify-between">
+            <div>
+              <h1>Men's shoe</h1>
+              <h2>฿ 3999</h2>
+            </div>
+            <div>
+              <button class="btn btn-neutral btn-outline">Edit</button>
+              <button class="btn btn-error">Remove</button>
+            </div>
+          </div>
+        </div>
+        <div class="px-4 py-2">
+          <div class="pb-2">
+            <!-- You can open the modal using ID.showModal() method -->
+            <button
+              class="btn btn-neutral w-full"
+              onclick="my_modal_4.showModal()"
+            >
+              Creadit Card
+            </button>
+            <dialog id="my_modal_4" class="modal">
+              <div class="modal-box w-11/12 max-w-5xl">
+                <div class="flex flex-col gap-4 p-4">
+                  <label class="font-bold text-lg py-8">Card information</label>
+                  <div class="flex gap-8">
+                    <div class="flex flex-col w-6/12 gap-4">
+                      <input
+                        type="text"
+                        class="input input-md input-bordered rounded-none"
+                      />
+                      <label>First Name</label>
+                    </div>
+                    <div class="flex flex-col w-6/12 gap-4">
+                      <input
+                        type="text"
+                        class="input input-md input-bordered rounded-none"
+                      />
+                      <label>Last Name</label>
+                    </div>
+                  </div>
+                  <div class="flex gap-8">
+                    <div class="flex flex-col w-6/12 gap-4">
+                      <input
+                        type="text"
+                        placeholder="xxxx xxxx xxxx xxxx"
+                        class="input input-md input-bordered rounded-none"
+                      />
+                      <label>Credit Card Number</label>
+                    </div>
+                    <div class="flex flex-col w-6/12 gap-4">
+                      <input
+                        type="text"
+                        placeholder="CVC"
+                        class="input input-md input-bordered rounded-none"
+                      />
+                      <label>Security Code</label>
+                    </div>
+                  </div>
+                  <div class="flex flex-col w-6/12 gap-4">
+                    <input
+                      type="text"
+                      placeholder="MM / YY"
+                      class="input input-md input-bordered rounded-none"
+                    />
+                    <label>Card Expiration</label>
+                  </div>
+                </div>
+                <div class="modal-action flex justify-center">
+                  <button class="btn btn-primary">Submit</button>
+                  <form method="dialog">
+                    <!-- if there is a button, it will close the modal -->
+                    <button class="btn">Close</button>
+                  </form>
+                </div>
+              </div>
+            </dialog>
+          </div>
+          <button class="btn btn-success w-full">Pay</button>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
