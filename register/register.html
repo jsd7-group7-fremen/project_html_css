@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fremen_Register</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div>
+      <header>
+        <img class="mt-6 mx-auto"
+          src="../image/shoes logo_Fremen_v3.jpg"
+          alt="Logo-Fremen-Shop"
+          />
+        <h1 class ="text-center text-2xl font-bold text-black">
+          Now let's make you a Fremen Member
+        </h1>
+      </header>
+     
+      <section class="flex items-center">
+        <form id="registerForm">
+          <div>
+            <label for="email" class="text-sm text-slate-500">Your Email</label>
+          </div>
+          <div>
+            <input
+              type="email"
+              id="email"
+              class="rounded-lg border-2 border-grey-300 border-solid w-96 mb-2"
+              required
+            />
+          </div>  
+          <div>
+            <label for="password" class="text-sm text-slate-500">Password</label>
+          </div>
+          <div>
+            <input 
+              type="password"
+              id="password"
+              class="rounded-lg border-2 border-grey-300 border-solid w-96 mb-4"
+              required
+              minlength =8
+              maxlength =20 
+            />
+          </div>
+          <div>
+            <label for="passwordAgain" class="text-sm text-slate-500">Password Again</label>
+          </div>
+          <div>
+            <input 
+              type="password"
+              id="passwordAgain"
+              class="rounded-lg border-2 border-grey-300 border-solid w-96 mb-4"
+              required
+              minlength =8
+              maxlength =20 
+            />
+          </div>
+          <div>
+            <label for="fullName" class="text-sm text-slate-500">Full Name/label>
+          </div>
+          <div>
+            <input 
+              type="text"
+              id="fullName"
+              class="rounded-lg border-2 border-grey-300 border-solid w-96 mb-4"
+              required
+              minlength =5
+              maxlength =50 
+            />
+          </div>
+          <div>
+            <label for="gender" class="text-sm text-slate-500">Gender</label>
+            <input 
+                type="radio"
+                name="radioMale"
+                class="radio"
+            />
+            <input
+                type="radio"
+                name="radioFemale"
+                class="radio"
+            />
+            <input
+                type="radio"
+                name="radioOther"
+                class="radio"
+            />
+        </div> 
+
+
+
+
+          </div>
+
+
+
+
+
+
+          <div>
+            <button
+            type="submit"
+            id="signIn"
+            class="mt-6 text-white text-sm font-semibold text-center bg-black rounded-lg w-96"
+            >
+            Sign in
+            </button>
+          </div>  
+        </form>
+      </section>
+
+      <section>
+        <div class="text-center text-sm font-semibold text-slate-500 mt-6 mb-6">
+          -------------------- OR --------------------
+        </div>
+
+        <div class="flex flex-row justify-center gap-2">  
+          <button
+            type="button"
+            id="signInWithGoogle"
+            class="w-60 bg-white border border-gray-300 text-slate-500 py-2 rounded focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-300 flex items-center justify-center"
+            >
+            <img class="w-5 h-5 mr-2" src="../image/Google_G_logo.png" alt="Google">
+            Sign in with Google
+          </button>
+          <button
+          type="button"
+          id="signInWithFacebook"
+          class="w-60 bg-white border border-gray-300 text-slate-500 py-2 rounded focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-300 flex items-center justify-center"
+          >
+          <img class="w-11 h-6 mr-2" src="../image/Facebook_Logo.png" alt="Facebook">
+          Sign in with Facebook
+          </button>
+        </div>
+      </section>
+
+    </div> 
+
+        <!-- <script src="./script.js"></script> -->
+  </body>
+</html>
