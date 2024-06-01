@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fremen_Sign_In</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+    href="https://cdn.jsdelivr.net/npm/daisyui@4.11.1/dist/full.min.css"
+    rel="stylesheet"
+    type="text/css"
+  />
+  </head>
+  <body>
+    <div>
+      <header>
+        <img class="mt-6 mx-auto"
+          src="../image/shoes logo_Fremen_v3.jpg"
+          alt="Logo-Fremen-Shop"
+          />
+        <h1 class ="text-center text-2xl font-bold text-black">
+          Welcome to Fremen!
+        </h1>
+        <h2 class="text-center text-sm font-semibold text-slate-500 ">
+          Sign in to continue
+        </h2>
+      </header>
+     
+      <section class="flex justify-center">
+        <form id="signInForm">
+          <div>
+            <label for="email" class="text-sm text-slate-500">Your Email</label>
+          </div>
+          <div>
+            <input
+              type="email"
+              id="email"
+              class="rounded-lg border-2 border-grey-300 border-solid w-96 mb-2"
+              required
+            />
+          </div>  
+          <div>
+            <label for="password" class="text-sm text-slate-500">Password</label>
+          </div>
+          <div>
+            <input 
+              type="password"
+              id="password"
+              class="rounded-lg border-2 border-grey-300 border-solid w-96 mb-4"
+              required
+              minlength =8
+              maxlength =20 
+            />
+          </div>
+          <div>
+            <button
+            type="submit"
+            id="signIn"
+            class="mt-6 py-4 text-white text-sm font-semibold text-center bg-black rounded-lg w-96"
+            >
+            Sign in
+            </button>
+          </div>  
+        </form>
+      </section>
+
+      <section>
+        <div class="text-center text-sm font-semibold text-slate-500 mt-6 mb-6">
+          -------------------- OR --------------------
+        </div>
+
+        <div class="flex flex-row justify-center gap-2">  
+          <button
+            type="button"
+            id="signInWithGoogle"
+            class="w-60 bg-white border border-gray-300 text-slate-500 py-2 rounded focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-300 flex items-center justify-center"
+            >
+            <img class="w-5 h-5 mr-2" src="../image/Google_G_logo.png" alt="Google">
+            Sign in with Google
+          </button>
+          <button
+          type="button"
+          id="signInWithFacebook"
+          class="w-60 bg-white border border-gray-300 text-slate-500 py-2 rounded focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-300 flex items-center justify-center"
+          >
+          <img class="w-11 h-6 mr-2" src="../image/Facebook_Logo.png" alt="Facebook">
+          Sign in with Facebook
+          </button>
+        </div>
+      </section>
+
+      <footer>
+        <div class="mt-10 text-center">
+          <a class="text-sm font-bold text-black hover:underline" 
+            href="#"
+          >Forgot Password?</a>
+        </div>
+        <div class="mt-2 text-center">
+          <span class="text-sm text-slate-700">Don't have an account?</span>
+          <a class="text-sm font-bold text-black hover:underline" 
+          href="#"
+        >Register</a>
+        </div>
+      </footer>
+    </div> 
+
+        <!-- <script src="./script.js"></script> -->
+  </body>
+</html>
