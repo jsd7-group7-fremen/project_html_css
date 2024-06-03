@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
             size: "7.5",
             quantity: 1,
             price: 205.00,
-            image: "https://via.placeholder.com/100"
+            image: "/images/adidas1.png"
         },
         {
             id: 2,
@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
             quantity: 1,
             price: 189.90,
             originalPrice: 239.00,
-            image: "https://via.placeholder.com/100"
+            image: "/images/adidas5.png"
         }
     ];
 
@@ -40,14 +40,14 @@ document.addEventListener("DOMContentLoaded", () => {
             const itemElement = document.createElement("div");
             itemElement.classList.add("flex", "items-center", "mb-4");
             itemElement.innerHTML = `
-                <img class="w-20 h-20 object-cover" src="${item.image}" alt="${item.name}">
+                <img class="w-40 h-18 object-cover" src="${item.image}" alt="${item.name}">
                 <div class="ml-4">
-                    <div class="text-lg font-bold">${item.name}</div>
-                    <div class="text-gray-500">${item.category}</div>
-                    <div class="text-gray-500">${item.color}</div>
-                    <div class="text-gray-500">Size ${item.size}</div>
-                    <div class="text-gray-500">Quantity ${item.quantity}</div>
-                    <div class="mt-2 text-lg font-bold">
+                    <div class="text-lg text-black font-bold">${item.name}</div>
+                    <div class="text-black">${item.category}</div>
+                    <div class="text-black">${item.color}</div>
+                    <div class="text-black">Size ${item.size}</div>
+                    <div class="text-black">Quantity ${item.quantity}</div>
+                    <div class="mt-2 text-lg text-black font-bold">
                         ${item.originalPrice ? `<span class="line-through text-gray-500">$${item.originalPrice.toFixed(2)}</span> ` : ''}
                         $${item.price.toFixed(2)}
                     </div>
