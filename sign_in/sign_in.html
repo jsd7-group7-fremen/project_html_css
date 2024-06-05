@@ -6,26 +6,27 @@
     <title>Fremen_Sign_In</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link
-    href="https://cdn.jsdelivr.net/npm/daisyui@4.11.1/dist/full.min.css"
-    rel="stylesheet"
-    type="text/css"
-  />
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.11.1/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
   </head>
   <body>
     <div>
       <header>
-        <img class="mt-6 mx-auto"
+        <img
+          class="mt-6 mx-auto"
           src="../image/shoes logo_Fremen_v3.jpg"
           alt="Logo-Fremen-Shop"
-          />
-        <h1 class ="text-center text-2xl font-bold text-black">
+        />
+        <h1 class="text-center text-2xl font-bold text-black">
           Welcome to Fremen!
         </h1>
-        <h2 class="text-center text-sm font-semibold text-slate-500 ">
+        <h2 class="text-center text-sm font-semibold text-slate-500 mb-6">
           Sign in to continue
         </h2>
       </header>
-     
+
       <section class="flex justify-center">
         <form id="signInForm">
           <div>
@@ -35,75 +36,99 @@
             <input
               type="email"
               id="email"
-              class="rounded-lg border-2 border-grey-300 border-solid w-96 mb-2"
+              class="w-96 mt-6 py-4 rounded-lg border-2 border-grey-300 border-solid mb-4"
               required
             />
-          </div>  
-          <div>
-            <label for="password" class="text-sm text-slate-500">Password</label>
           </div>
           <div>
-            <input 
+            <label for="password" class="text-sm text-slate-500"
+              >Password</label
+            >
+          </div>
+          <div>
+            <input
               type="password"
               id="password"
-              class="rounded-lg border-2 border-grey-300 border-solid w-96 mb-4"
+              class="w-96 mt-6 py-4 rounded-lg border-2 border-grey-300 border-solid"
               required
-              minlength =8
-              maxlength =20 
+              minlength="8"
+              maxlength="20"
             />
+            <!--ยังเอาตาเข้าช่่่่่อง input password ไม่ได้   -->
+            <label class="swap">
+              <!-- this hidden checkbox controls the state -->
+              <input type="checkbox" />
+              <div class="swap-on">
+                <img class="w-5 h-5 mr-2" src="../image/eye_opened.jpg" />
+              </div>
+              <div class="swap-off">
+                <img class="w-5 h-5 mr-2" src="../image/eye_closed.jpg" />
+              </div>
+            </label>
           </div>
           <div>
-            <button
-            type="submit"
-            id="signIn"
-            class="mt-6 py-4 text-white text-sm font-semibold text-center bg-black rounded-lg w-96"
-            >
-            Sign in
-            </button>
-          </div>  
+            <a href="#">
+              <button
+                type="button"
+                id="signIn"
+                class="min-w-96 mt-8 py-4 text-white text-sm font-semibold text-center bg-black rounded-lg"
+              >
+                Sign in
+              </button>
+            </a>
+          </div>
         </form>
       </section>
 
       <section>
-        <div class="text-center text-sm font-semibold text-slate-500 mt-6 mb-6">
-          -------------------- OR --------------------
+        <div class="flex justify-center">
+          <div class="divider w-96">Or</div>
         </div>
 
-        <div class="flex flex-row justify-center gap-2">  
+        <div class="flex flex-row justify-center gap-2">
           <button
             type="button"
             id="signInWithGoogle"
-            class="w-60 bg-white border border-gray-300 text-slate-500 py-2 rounded focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-300 flex items-center justify-center"
-            >
-            <img class="w-5 h-5 mr-2" src="../image/Google_G_logo.png" alt="Google">
+            class="w-55 bg-white border border-gray-300 text-slate-500 py-2 rounded focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-300 flex items-center justify-center"
+          >
+            <img
+              class="w-5 h-5 mr-2"
+              src="../image/Google_G_logo.png"
+              alt="Google"
+            />
             Sign in with Google
           </button>
+
           <button
-          type="button"
-          id="signInWithFacebook"
-          class="w-60 bg-white border border-gray-300 text-slate-500 py-2 rounded focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-300 flex items-center justify-center"
+            type="button"
+            id="signInWithFacebook"
+            class="w-50 bg-white border border-gray-300 text-slate-500 py-2 rounded focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-300 flex items-center justify-center"
           >
-          <img class="w-11 h-6 mr-2" src="../image/Facebook_Logo.png" alt="Facebook">
-          Sign in with Facebook
+            <img
+              class="w-11 h-6 mr-2"
+              src="../image/Facebook_Logo.png"
+              alt="Facebook"
+            />
+            Sign in with Facebook
           </button>
         </div>
       </section>
 
       <footer>
         <div class="mt-10 text-center">
-          <a class="text-sm font-bold text-black hover:underline" 
-            href="#"
-          >Forgot Password?</a>
+          <a class="text-sm font-bold text-black hover:underline" href="#"
+            >Forgot Password?</a
+          >
         </div>
         <div class="mt-2 text-center">
           <span class="text-sm text-slate-700">Don't have an account?</span>
-          <a class="text-sm font-bold text-black hover:underline" 
-          href="#"
-        >Register</a>
+          <a class="text-sm font-bold text-black hover:underline" href="#"
+            >Register</a
+          >
         </div>
       </footer>
-    </div> 
+    </div>
 
-        <!-- <script src="./script.js"></script> -->
+    <!-- <script src="./script.js"></script> -->
   </body>
 </html>
