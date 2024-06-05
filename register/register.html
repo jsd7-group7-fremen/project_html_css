@@ -6,27 +6,24 @@
     <title>Fremen_Sign_In</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link
-    href="https://cdn.jsdelivr.net/npm/daisyui@4.11.1/dist/full.min.css"
-    rel="stylesheet"
-    type="text/css"
-  />
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.11.1/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
   </head>
   <header>
-    <img class="mt-1 mx-auto w-28 md-48"
+    <img
+      class="mt-1 mx-auto w-28 md-48"
       src="../image/shoes logo_Fremen_v3.jpg"
       alt="Logo-Fremen-Shop"
-      />
-    <h1 class ="text-center text-2xl font-bold text-black mb-2">
+    />
+    <h1 class="text-center text-2xl font-bold text-black mb-2">
       Now let's make you a Fremen Member
     </h1>
   </header>
   <body>
-    
-
-
-      <section>
-        <div class="flex justify-center">
-
+    <section>
+      <div class="flex justify-center">
         <form id="registerForm">
           <div>
             <label for="email" class="text-sm text-slate-500">Your Email</label>
@@ -38,81 +35,99 @@
               class="w-96 py-2 rounded-lg border-2 border-grey-300 border-solid mb-4"
               required
             />
-          </div>  
-          <div>
-            <label for="password" class="mt-4 text-sm text-slate-500">Password</label>
           </div>
           <div>
-            <input 
+            <label for="password" class="mt-4 text-sm text-slate-500"
+              >Password</label
+            >
+          </div>
+          <div>
+            <input
               type="password"
               id="password"
               class="w-96 py-2 rounded-lg border-2 border-grey-300 border-solid mb-4"
               required
-              minlength =8
-              maxlength =20 
+              minlength="8"
+              maxlength="20"
             />
-           <!--ยังเอาตาเข้าช่่่่่อง input password ไม่ได้   -->
+            <!--ยังเอาตาเข้าช่่่่่อง input password ไม่ได้   -->
             <label class="swap">
               <!-- this hidden checkbox controls the state -->
               <input type="checkbox" />
-              <div class="swap-on"><img class="w-5 h-5 mr-2" src="../image/eye_opened.jpg"></div>
-              <div class="swap-off"><img class="w-5 h-5 mr-2" src="../image/eye_closed.jpg"></div>            
+              <div class="swap-on">
+                <img class="w-5 h-5 mr-2" src="../image/eye_opened.jpg" />
+              </div>
+              <div class="swap-off">
+                <img class="w-5 h-5 mr-2" src="../image/eye_closed.jpg" />
+              </div>
             </label>
           </div>
-          
+
           <div>
-            <label for="passwordAgain" class="mt-4 text-sm text-slate-500">Password Again</label>
+            <label for="passwordAgain" class="mt-4 text-sm text-slate-500"
+              >Password Again</label
+            >
           </div>
           <div>
-            <input 
+            <input
               type="password"
               id="passwordAgain"
               class="w-96 py-2 rounded-lg border-2 border-grey-300 border-solid mb-4"
               required
-              minlength =8
-              maxlength =20 
+              minlength="8"
+              maxlength="20"
             />
-           <!--ยังเอาตาเข้าช่่่่่อง input password ไม่ได้   -->
+            <!--ยังเอาตาเข้าช่่่่่อง input password ไม่ได้   -->
             <label class="swap">
               <!-- this hidden checkbox controls the state -->
               <input type="checkbox" />
-              <div class="swap-on"><img class="w-5 h-5 mr-2" src="../image/eye_opened.jpg"></div>
-              <div class="swap-off"><img class="w-5 h-5 mr-2" src="../image/eye_closed.jpg"></div>            
+              <div class="swap-on">
+                <img class="w-5 h-5 mr-2" src="../image/eye_opened.jpg" />
+              </div>
+              <div class="swap-off">
+                <img class="w-5 h-5 mr-2" src="../image/eye_closed.jpg" />
+              </div>
             </label>
           </div>
 
           <div>
-            <label for="fullname" class="mt-4 text-sm text-slate-500">Fullname</label>
+            <label for="fullname" class="mt-4 text-sm text-slate-500"
+              >Fullname</label
+            >
           </div>
           <div>
-            <input 
+            <input
               type="text"
               id="fullname"
               class="w-96 py-2 rounded-lg border-2 border-grey-300 border-solid mb-4"
               required
-              minlength =5
-              maxlength =50 
+              minlength="5"
+              maxlength="50"
             />
           </div>
 
           <div class="flex flex-row gap-4">
+            <div>
+              <label for="gender" class="mt-4 text-sm text-slate-500"
+                >Gender</label
+              >
+            </div>
+            <div class="flex flex-row mb-4">
+              <select id="gender" class="select select-bordered">
+                <option disabled selected>Gender</option>
+                <option>Male</option>
+                <option>Female</option>
+                <option>Other</option>
+              </select>
+            </div>
+          </div>
           <div>
-            <label for="gender" class="mt-4 text-sm text-slate-500">Gender</label>
-          </div>
-          <div class="flex flex-row mb-4">
-            <select id="gender" class="select select-bordered">
-              <option disabled selected>Gender</option>
-              <option>Male</option>
-              <option>Female</option>
-              <option>Other</option>
-            </select>
-          </div>
+            <label for="dateOfBirth" class="mt-4 text-sm text-slate-500"
+              >Date of birth</label
+            >
           </div>
           <div>
-            <label for="dateOfBirth" class="mt-4 text-sm text-slate-500">Date of birth</label>
-          </div>
-          <div>
-            <input 
+            <input
               type="date"
               id="dateOfBirth"
               class="w-96 py-2 rounded-lg border-2 border-grey-300 border-solid mb-4"
@@ -120,81 +135,116 @@
             />
           </div>
           <div>
-            <label for="mobilePhone" class="mt-4 text-sm text-slate-500">Mobile Phone</label>
+            <label for="mobilePhone" class="mt-4 text-sm text-slate-500"
+              >Mobile Phone</label
+            >
           </div>
           <div>
-            <input 
+            <input
               type="tel"
               id="mobilePhone"
               class="w-96 py-2 rounded-lg border-2 border-grey-300 border-solid mb-4"
               required
             />
           </div>
-          <section class="md:hidden">       
+          <section class="md:hidden">
             <div class="flex items-center justify-end">
               <div class="w-full max-w-xs text-center">
-                  <div class="flex flex-col items-center self-center">
-                      <div class="relative w-32 h-32">
-                          <img id="imagePreview" class="w-32 h-32 rounded-full object-cover border border-gray-300" src="https://via.placeholder.com/150" alt="Profile Image">
-                      </div>
-                      <div class="mt-4">
-                          <label for="imageInput" class="inline-block px-4 py-2 border border-gray-300 text-gray-700 bg-white rounded-md shadow-sm cursor-pointer hover:bg-gray-50">
-                              Select Image
-                          </label>
-                          <input id="imageInput" type="file" accept=".jpeg,.jpg,.png" class="hidden" onchange="previewImage(event)">
-                      </div>
-                      <p class="mt-2 text-sm text-gray-600">File size: maximum 1 MB</p>
-                      <p class="text-sm text-gray-600">File extension: .JPEG, .PNG</p>
-                  </div>
-              </div>
-          </div>      
-           </section>
-             
-            <div>
-            <button
-            type="submit"
-            id="register"
-            class="min-w-96 mt-8 py-2 text-white text-sm font-semibold text-center bg-black rounded-lg"
-            >
-            Create Account
-            </button>
-          </div>  
-       </form>
-       <section class="hidden md:flex">       
-        <div class="flex items-center justify-end">
-          <div class="w-full max-w-xs text-center">
-              <div class="flex flex-col items-center self-center">
+                <div class="flex flex-col items-center self-center">
                   <div class="relative w-32 h-32">
-                      <img id="imagePreview" class="w-32 h-32 rounded-full object-cover border border-gray-300" src="https://via.placeholder.com/150" alt="Profile Image">
+                    <img
+                      id="imagePreview"
+                      class="w-32 h-32 rounded-full object-cover border border-gray-300"
+                      src="https://via.placeholder.com/150"
+                      alt="Profile Image"
+                    />
                   </div>
                   <div class="mt-4">
-                      <label for="imageInput" class="inline-block px-4 py-2 border border-gray-300 text-gray-700 bg-white rounded-md shadow-sm cursor-pointer hover:bg-gray-50">
-                          Select Image
-                      </label>
-                      <input id="imageInput" type="file" accept=".jpeg,.jpg,.png" class="hidden" onchange="previewImage(event)">
+                    <label
+                      for="imageInput"
+                      class="inline-block px-4 py-2 border border-gray-300 text-gray-700 bg-white rounded-md shadow-sm cursor-pointer hover:bg-gray-50"
+                    >
+                      Select Image
+                    </label>
+                    <input
+                      id="imageInput"
+                      type="file"
+                      accept=".jpeg,.jpg,.png"
+                      class="hidden"
+                      onchange="previewImage(event)"
+                    />
                   </div>
-                  <p class="mt-2 text-sm text-gray-600">File size: maximum 1 MB</p>
-                  <p class="text-sm text-gray-600">File extension: .JPEG, .PNG</p>
+                  <p class="mt-2 text-sm text-gray-600">
+                    File size: maximum 1 MB
+                  </p>
+                  <p class="text-sm text-gray-600">
+                    File extension: .JPEG, .PNG
+                  </p>
+                </div>
               </div>
+            </div>
+          </section>
+
+          <div>
+            <a href="../index.html">
+              <button
+                type="button"
+                id="register"
+                class="min-w-96 mt-8 py-2 text-white text-sm font-semibold text-center bg-black rounded-lg"
+              >
+                Create Account
+              </button>
+            </a>
           </div>
-      </div>      
-       </section>    
-      </div> 
-      </section>
+        </form>
+        <section class="hidden md:flex">
+          <div class="flex items-center justify-end">
+            <div class="w-full max-w-xs text-center">
+              <div class="flex flex-col items-center self-center">
+                <div class="relative w-32 h-32">
+                  <img
+                    id="imagePreview"
+                    class="w-32 h-32 rounded-full object-cover border border-gray-300"
+                    src="https://via.placeholder.com/150"
+                    alt="Profile Image"
+                  />
+                </div>
+                <div class="mt-4">
+                  <label
+                    for="imageInput"
+                    class="inline-block px-4 py-2 border border-gray-300 text-gray-700 bg-white rounded-md shadow-sm cursor-pointer hover:bg-gray-50"
+                  >
+                    Select Image
+                  </label>
+                  <input
+                    id="imageInput"
+                    type="file"
+                    accept=".jpeg,.jpg,.png"
+                    class="hidden"
+                    onchange="previewImage(event)"
+                  />
+                </div>
+                <p class="mt-2 text-sm text-gray-600">
+                  File size: maximum 1 MB
+                </p>
+                <p class="text-sm text-gray-600">File extension: .JPEG, .PNG</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </section>
 
-
-
-
-        <!-- <script src="./script.js"></script> -->
-        <script>
-          function previewImage(event) {
-              var reader = new FileReader();
-              reader.onload = function() {
-                  var output = document.getElementById('imagePreview');
-                  output.src = reader.result;
-              };
-              reader.readAsDataURL(event.target.files[0]);
-          }
-      </script>
+    <!-- <script src="./script.js"></script> -->
+    <script>
+      function previewImage(event) {
+        var reader = new FileReader();
+        reader.onload = function () {
+          var output = document.getElementById("imagePreview");
+          output.src = reader.result;
+        };
+        reader.readAsDataURL(event.target.files[0]);
+      }
+    </script>
   </body>
 </html>
